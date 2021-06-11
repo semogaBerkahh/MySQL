@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <EditText
+        android:id="@+id/edTelpon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telpon"
+        android:inputType="phone"
+        android:text="Telpom"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="314dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
