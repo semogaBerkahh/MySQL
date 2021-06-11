@@ -1,0 +1,18 @@
+<?php
+	$server		= "localhost";
+	$user		= "root";
+	$password	= "";
+	$namadb		= "TIUMY";
+	
+	$conn = mysqli_connect($server, $user, $password, $namadb) or die ("koneksi gagal");
+
+	$result = mysqli_querry($conn,"SELECT * FROM teman");
+	$json = array();
+
+	while($row = mysqli_fetch_assoc($result)){
+		$json[] = $row;
+	}
+
+	echo json_encode($json);
+	mysqli_close($conn);
+?>
